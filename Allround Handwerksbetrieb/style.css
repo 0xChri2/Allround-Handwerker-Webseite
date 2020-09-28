@@ -1,12 +1,14 @@
 
-    body {
+    body 
+    {
         height: 100%;
         width: 100%;
         color: whitesmoke;
 
    }
 
-   #heading {
+   #heading 
+   {
        position: absolute;
        top: 0%;
        text-align: center;
@@ -15,12 +17,15 @@
        margin-left: -15px;
    }
    /* Navigation */       
-   #menu {
+   #menu 
+   {
        font-size:14px;
        position:absolute;
+       top:15px;
    }
 
-   #menu ul {
+   #menu ul 
+   {
        list-style-type:none;
        list-style-image:none;
        margin:0;
@@ -28,23 +33,28 @@
        
    }
 
-   #menu li.topmenu {
+   #menu li.topmenu 
+   {
        float:left;
        margin-left: 10px;
    }
 
-   .topmenu a {
+   .topmenu a 
+   {
        float:left;
        width:35px;
+       height: 30px;
        text-align:left;
        
    }
 
-   .topmenu ul{
+   .topmenu ul
+   {
        display:none;
    }
 
-   .topmenu a, .submenu a{
+   .topmenu a, .submenu a
+   {
        padding:8px;
        color:white;
        font-weight:bold;
@@ -53,7 +63,8 @@
        margin:0;
    }
 
-   .submenu a{
+   .submenu a
+   {
        font-size:12px;
        width:1920px;
        position:relative;
@@ -61,18 +72,21 @@
        margin-left: -15px;
    }
 
-   #menu a:hover, .topmenu.on a {
+   #menu a:hover, .topmenu.on a 
+   {
        color:white;
        background-color:rgb(71, 71, 73) ;
    }
 
-   .topmenu:hover ul {
+   .topmenu:hover ul 
+   {
        display:block;
        z-index:500;
    }
    /* end of Navigation */   
 
-   #footer {
+   #footer 
+   {
        text-align: center;
        background-color: #292929;
        color: rgb(255, 255, 255);
@@ -85,14 +99,16 @@
 
    }
 
-   #footer a {
+   #footer a 
+   {
        color: rgb(255, 255, 255);
        text-decoration: none;
        
        
    }
 
-   #footer:hover a {
+   #footer:hover a 
+   {
        color: rgb(255, 255, 255);
        text-decoration: none;
        
@@ -100,32 +116,36 @@
 
    }
 
-   #footer:link a {
+   #footer:link a 
+   {
        color: rgb(255, 255, 255);
        text-decoration: none;
        
 
    }
 
-   #footer:active a {
+   #footer:active a 
+   {
        color: rgb(255, 255, 255);
        text-decoration: none;
        
 
    }
 
-   #footer:visited a {
+   #footer:visited a 
+   {
        color: rgb(255, 255, 255);
        text-decoration: none;
        
 
    }
 
-   #article {
+   #article
+   {
        top: 100px;
-       width: 1920px;
+      width: 100%;
        position: relative;
-       /*clear: both;*/
+       margin-left: 25px;
    }
 
    

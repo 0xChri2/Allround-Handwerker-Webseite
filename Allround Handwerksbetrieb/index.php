@@ -34,9 +34,12 @@
             </ul>
         </div>
 
+                   
         <div id="article">
-               
-               
+            
+            <h1><center>Allgemeines</center></h1> 
+            <br/>
+            <h4>Wir sind ein Handwerkerbetrieb für alle Tätigkeiten.</h4>
                
 
 
