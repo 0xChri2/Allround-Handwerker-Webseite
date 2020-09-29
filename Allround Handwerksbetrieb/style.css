@@ -2,7 +2,7 @@
     body 
     {
         height: 100%;
-        width: 100%;
+        width: auto;
         color: whitesmoke;
 
    }
@@ -85,6 +85,15 @@
    }
    /* end of Navigation */   
 
+   #banner
+   {
+        width: auto;
+        height: 200px;
+        background-image: url("pictures/tools.jpg");
+        margin-left: -15px;
+        margin-right: -15px;
+   }
+
    #footer 
    {
        text-align: center;
@@ -142,10 +151,34 @@
 
    #article
    {
-       top: 100px;
-      width: 100%;
-       position: relative;
-       margin-left: 25px;
+        width: auto;
+        position: static;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 100px;
    }
 
-   
+   #article a 
+   {
+       color: rgb(255, 255, 255);
+   }
+
+   #article:hover a 
+   {
+       color: rgb(255, 255, 255);
+   }
+
+   #article:link a 
+   {
+       color: rgb(255, 255, 255);
+   }
+
+   #article:active a 
+   {
+       color: rgb(255, 255, 255);
+   }
+
+   #article:visited a 
+   {
+       color: rgb(255, 255, 255); 
+   }

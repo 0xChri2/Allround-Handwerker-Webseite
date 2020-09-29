@@ -1,4 +1,4 @@
-<!-- Jan Werth -->
+<!-- Jan Werth, Christoph Riedel-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
@@ -33,14 +33,21 @@
                 
             </ul>
         </div>
-
+        <div id="banner">
+        </div>
                    
         <div id="article">
             
             <h1><center>Allgemeines</center></h1> 
+            <h4>Wenn Sie auf der Suche nach einem allaround Handswerkerbetrieb sind, in dem Sie hochqualifiziert und
+            freundlich beraten werden, dann sind Sie bei uns genau richtig! Unser Team aus professionellen und
+            erfahrenen Mitarbeitern bietet Ihnen stets zuverlässige Ausführungen sämtlicher Handswerklicher dienstleistungen.
+            Höchste Präzision und Gewissenhaftigkeit sind bei unserer Arbeit maßgebende Grundsätze, die wir stets einhalten.
+            Unsere Firma besteht aus erfahrenen Fachkräften, die Sie nach bestem Wissen und Gewissen beraten und Ihnen kostengünstige Lösungen anbieten.</h4>
+
+            <img src="pictures/Startseite.jpg" width="60%">
             <br/>
-            <h4>Wir sind ein Handwerkerbetrieb für alle Tätigkeiten.</h4>
-               
+            <h4>Wir sind ein Handwerkerbetrieb für alle <a href="pages/Tätigkeiten.php">Tätigkeiten</a>. Unsere Firma ist dabei auf Malerei und Lackiererei spezialisiert.</h4>
 
 
         </div>
