@@ -22,8 +22,9 @@
                     <a href=""><img src="../pictures/Drei Striche.png"></a>
                     
                     <ul>
+                        <li class="submenu"><a href="../index.php">Startseite</a></li>
                         <li class="submenu"><a href="Über uns.php">Über uns</a></li>
-						<li class="submenu"><a href="Tätigkeiten.php">Handwerk</a></li>
+						<li class="submenu"><a href="Tätigkeiten.php">Tätigkeiten</a></li>
 						<li class="submenu"><a href="FAQ.php">FAQ</a></li>
 						<li class="submenu"><a href="Kontakte.php">Kontakte</a></li>
 						<li class="submenu"><a href="Impressum.php">Impressum</a></li>
@@ -32,7 +33,8 @@
                 
             </ul>
         </div>
-
+        <div id="banner">
+        </div>
         <div id="article">
                
                

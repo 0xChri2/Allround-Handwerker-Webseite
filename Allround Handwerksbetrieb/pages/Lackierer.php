@@ -22,8 +22,9 @@
                     <a href=""><img src="../pictures/Drei Striche.png"></a>
                     
                     <ul>
+                        <li class="submenu"><a href="../index.php">Startseite</a></li>
                         <li class="submenu"><a href="Über uns.php">Über uns</a></li>
-						<li class="submenu"><a href="Tätigkeiten.php">Handwerk</a></li>
+						<li class="submenu"><a href="Tätigkeiten.php">Tätigkeiten</a></li>
 						<li class="submenu"><a href="FAQ.php">FAQ</a></li>
 						<li class="submenu"><a href="Kontakte.php">Kontakte</a></li>
 						<li class="submenu"><a href="Impressum.php">Impressum</a></li>
@@ -32,10 +33,58 @@
                 
             </ul>
         </div>
-
+        <div id="banner">
+        </div>
         <div id="article">
-               
-               
+        <center>
+        <form action="formular.pl" method="post">
+        <h1><u>Lakierer</u></h1>
+        <font size="5">
+			<p>
+				Vorname <input type="text" name="vorname" placeholder="Max" required>
+				Nachname <input type="text" name="nachname" placeholder="Mustermann" required>
+			</p>
+			<p>
+				Geburtstag <br/><input type="date" name="Geburtstag" required>
+			</p>
+			<table width="100%">
+			<tr>
+				<td><center><font size="5">Strasse</font></center></td>
+				<td><center><font size="5">Hausnummer</font></center></td>
+				<td><center><font size="5">Stadt</font></center></td>
+				<td><center><font size="5">Postleitzahl</font></center></td> 
+			</tr>
+			<tr>
+				<td><center><input type="text" name="strasse" placeholder="Musterstrasse" required></center></td>
+				<td><center><input type="number" name="hausnummer" placeholder="3" required></center></td>
+				<td><center><input type="text" name="stadt" placeholder="Hilden" required></center></td>
+				<td><center><input type="number" name="posteitzahl" placeholder="40721" required></center></td>
+			</tr>
+			
+			</table>
+            <p> 
+				Telefon <input type="number" name="telefon" required>
+				E-Mail <input type="text" name="e-mail" required>
+			</p>
+            <p>
+				<h3>Terminzeitraum</h3>
+				von <input type="date" name="Termin Anfang" required>
+				bis <input type="date" name="Termin Ende" required>
+			</p>
+            <p>
+				<h3>Tätigkeit</h3>
+				<textarea name="Tätigkeit" cols="50" rows="10"> 
+				</textarea>
+				
+			<hr />
+			
+			<input type="submit" value="Anfrage abschicken!">
+			<input type="reset">
+			</p>
+
+        </form>
+        </font>
+        </center>      
                
 
 

@@ -22,6 +22,7 @@
                     <a href=""><img src="pictures/Drei Striche.png"></a>
                     
                     <ul>
+                    <li class="submenu"><a href="index.php">Startseite</a></li>
                         <li class="submenu"><a href="pages/Über uns.php">Über uns</a></li>
 						<li class="submenu"><a href="pages/Tätigkeiten.php">Tätigkeiten</a></li>
 						<li class="submenu"><a href="pages/FAQ.php">FAQ</a></li>
