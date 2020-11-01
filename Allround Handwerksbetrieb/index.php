@@ -46,7 +46,9 @@
             Höchste Präzision und Gewissenhaftigkeit sind bei unserer Arbeit maßgebende Grundsätze, die wir stets einhalten.
             Unsere Firma besteht aus erfahrenen Fachkräften, die Sie nach bestem Wissen und Gewissen beraten und Ihnen kostengünstige Lösungen anbieten.</h4>
 
-            <img src="pictures/Startseite.jpg" width="60%">
+            <img src="pictures/Startseite.jpg" width="60%"/>
+            <br />
+            <a href="http://www.freepik.com">Designed by cookie_studio / Freepik</a>
             <br/>
             <h4>Wir sind ein Handwerkerbetrieb für alle <a href="pages/Tätigkeiten.php">Tätigkeiten</a>. Unsere Firma ist dabei auf Malerei und Lackiererei spezialisiert.</h4>
 

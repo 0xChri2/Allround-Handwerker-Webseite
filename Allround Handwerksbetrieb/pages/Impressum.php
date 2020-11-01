@@ -44,6 +44,7 @@
                <h4>Telefon: 1234567890</h4>
                <h4>E-Mail: AllroundHandwerker@Handwerk.de</h4>
                <h4>Umsatzsteueridentifikationsnummer: DE1234525262114164437878</h4>
+               <a href="http://www.freepik.com">Designed by cookie_studio / Freepik</a>
         </center>
         </div>
 
