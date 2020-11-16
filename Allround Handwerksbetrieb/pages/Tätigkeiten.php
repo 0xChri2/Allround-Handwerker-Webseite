@@ -1,4 +1,4 @@
-<!-- Jan Werth -->
+<!-- Jan Werth, Christoph Riedel-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
@@ -37,14 +37,17 @@
         </div>
 
         <div id="article">
-
-        <u> <h1 align="center"> Tätigkeiten </h1> </u>
-
-            <h3 align="center"> <a href="Maler.php">Maler </a> </h3>
-            <center> <a href="Maler.php"> <img src="../pictures/Maler.jpg" width="40%"> </a> </center>
         
-            <h3 align="center"> <a href="Lackierer.php">Lackierer </a> </h3>
-            <center> <a href="Lackierer.php"> <img src="../pictures/lackierer.jpg" width="40%"> </a> </center>
+        <center>
+            <h1>Tätigkeiten</h1>
+
+            <h3> <a href="Maler.php">Maler </a> </h3>
+            <a href="Maler.php"> <img src="../pictures/Maler.jpg" width="40%"> </a>
+
+            <h3> <a href="Lackierer.php">Lackierer </a> </h3>
+            <a href="Lackierer.php"> <img src="../pictures/lackierer.jpg" width="40%"> </a>
+            
+        </center>
         
            
                

@@ -1,4 +1,4 @@
-<!-- Jan Werth -->
+<!-- Jan Werth, Christoph Riedel-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
@@ -36,11 +36,20 @@
         <div id="banner">
         </div>
         <div id="article">
+
+		<?php 
+			if(isset($_POST['Senden'])==0)
+			{
+		?>
         <center>
-        <form action="formular.pl" method="post">
-        <h1><u>Lakierer</u></h1>
+        <form action="" method="post">
+        <h1><u>Lackierer</u></h1>
         <font size="5">
 			<p>
+				Anrede <select name="Anrede" size="1">
+				<option>Herr</option>
+				<option>Frau</option>
+				</select>
 				Vorname <input type="text" name="vorname" placeholder="Max" required>
 				Nachname <input type="text" name="nachname" placeholder="Mustermann" required>
 			</p>
@@ -78,7 +87,7 @@
 				
 			<hr />
 			
-			<input type="submit" value="Anfrage abschicken!">
+			<input type="submit" name="Senden" value="Anfrage abschicken!">
 			<input type="reset">
 			</p>
 
@@ -86,7 +95,15 @@
         </font>
         </center>      
                
-
+		
+		<?php   
+			}
+			else
+			{
+				echo"<br /><br /><center><h2> Vielen Dank, ". $_POST['Anrede'] . " " . $_POST['nachname'] . ". Wir melden uns bald bei Ihnen!</h2></center>" ;
+			}  
+	 
+		?>
 
         </div>
 
