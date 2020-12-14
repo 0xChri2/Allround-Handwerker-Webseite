@@ -48,15 +48,15 @@
         <font size="5">
 		
 			<p>
-				Anrede <select name="Anrede" size="1">
+				Anrede <select name="Anrede" size="1" value="<?php echo $_POST['Anrede'] ?>">
 				<option>Herr</option>
 				<option>Frau</option>
 				</select>
-				Vorname <input type="text" name="vorname" placeholder="Max" >
-				Nachname <input type="text" name="nachname" placeholder="Mustermann" >
+				Vorname <input type="text" name="vorname" placeholder="Max" value="<?php echo $_POST['vorname'] ?>"/>
+				Nachname <input type="text" name="nachname" placeholder="Mustermann" value="<?php echo $_POST['nachname'] ?>"/>
 			</p>
 			<p>
-				Geburtstag <br/><input type="date" name="Geburtstag" required>
+				Geburtstag <br/><input type="date" name="Geburtstag" required value="<?php echo $_POST['Geburtstag'] ?>"/>
 			</p>
 			<table width="100%">
 			<tr>
@@ -66,21 +66,21 @@
 				<td><center><font size="5">Postleitzahl</font></center></td> 
 			</tr>
 			<tr>
-				<td><center><input type="text" name="strasse" placeholder="Musterstrasse" ></center></td>
-				<td><center><input type="number" name="hausnummer" placeholder="3" ></center></td>
-				<td><center><input type="text" name="stadt" placeholder="Hilden" ></center></td>
-				<td><center><input type="number" name="posteitzahl" placeholder="40721" ></center></td>
+				<td><center><input type="text" name="strasse" placeholder="Musterstrasse" value="<?php echo $_POST['strasse'] ?>"/></center></td>
+				<td><center><input type="number" name="hausnummer" placeholder="3" value="<?php echo $_POST['hausnummer'] ?>"/></center></td>
+				<td><center><input type="text" name="stadt" placeholder="Hilden" value="<?php echo $_POST['stadt'] ?>"/></center></td>
+				<td><center><input type="number" name="postleitzahl" placeholder="40721" value="<?php echo $_POST['postleitzahl'] ?>"/></center></td>
 			</tr>
 			
 			</table>
             <p> 
-				Telefon <input type="number" name="telefon" >
-				E-Mail <input type="text" name="e-mail" >
+				Telefon <input type="number" name="telefon" value="<?php echo $_POST['telefon'] ?>"/>
+				E-Mail <input type="text" name="e-mail" value="<?php echo $_POST['e-mail'] ?>"/>
 			</p>
             <p>
 				<h3>Terminzeitraum</h3>
-				von <input type="date" name="Termin Anfang" required>
-				bis <input type="date" name="Termin Ende" required>
+				von <input type="date" name="Termin Anfang" value="<?php echo $_POST['Termin Anfang'] ?>" required/>
+				bis <input type="date" name="Termin Ende" value="<?php echo $_POST['Termin Ende'] ?>" required/>
 			</p>
             <p>
 				<h3>Tätigkeit</h3>
@@ -109,11 +109,13 @@
 				$strasse = $_POST['strasse'];
 				$hausnummer = $_POST['hausnummer'];
 				$stadt = $_POST['stadt'];
-				$postleitzahl = $_POST['posteitzahl'];
+				$postleitzahl = $_POST['postleitzahl'];
 				$error = false;
 				$fehler_nachricht=array();
 				$umlaute = array('ä','Ä','ü','Ü','ö','Ö');
 
+				
+				
 				if($vorname=="")
 				{
 				$error = true;
