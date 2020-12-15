@@ -102,14 +102,14 @@
 			if(isset($_POST['Senden'])==true)
 			{	
 				$anrede = $_POST['Anrede'];
-				$vorname = $_POST['vorname'];
-				$nachname = $_POST['nachname'];
-				$email = $_POST['e-mail'];
-				$telefon = $_POST['telefon'];
+				$vorname = trim($_POST['vorname']);
+				$nachname = trim($_POST['nachname']);
+				$email = trim($_POST['e-mail']);
+				$telefon = trim($_POST['telefon']);
 				$strasse = $_POST['strasse'];
 				$hausnummer = $_POST['hausnummer'];
-				$stadt = $_POST['stadt'];
-				$postleitzahl = $_POST['postleitzahl'];
+				$stadt = trim($_POST['stadt']);
+				$postleitzahl = trim($_POST['postleitzahl']);
 				$error = false;
 				$fehler_nachricht=array();
 				$umlaute = array('ä','Ä','ü','Ü','ö','Ö');
