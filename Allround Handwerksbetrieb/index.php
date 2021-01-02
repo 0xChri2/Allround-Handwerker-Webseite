@@ -39,7 +39,7 @@
                    
         <div id="article">
             
-            <h1><center>Allgemeines</center></h1> 
+            <div class="headline"><h1>Allgemeines</h1></div>
             <h4>Wenn Sie auf der Suche nach einem allaround Handswerkerbetrieb sind, in dem Sie hochqualifiziert und
             freundlich beraten werden, dann sind Sie bei uns genau richtig! Unser Team aus professionellen und
             erfahrenen Mitarbeitern bietet Ihnen stets zuverlässige Ausführungen sämtlicher Handswerklicher dienstleistungen.

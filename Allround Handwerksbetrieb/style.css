@@ -6,9 +6,19 @@
         color: whitesmoke;
 
    }
+   .centertext
+   {
+       text-align: center;
+   }
+
+   .headline
+   {
+       text-align: center;
+       font-size: 20px;
+   }
 
    #heading 
-   {
+   {    
        position: absolute;
        top: 0%;
        text-align: center;
@@ -65,7 +75,7 @@
 
    .submenu a
    {
-       font-size:12px;
+       font-size: 15px;
        width:1920px;
        position:relative;
        clear:both; /* special IE6 */
@@ -156,6 +166,7 @@
         margin-left: 25px;
         margin-right: 25px;
         margin-bottom: 100px;
+        font-size: 20px;
    }
 
    #article a 

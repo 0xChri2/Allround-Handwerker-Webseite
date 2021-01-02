@@ -38,8 +38,8 @@
 
         <div id="article">
         
-        <center>
-            <h1>Tätigkeiten</h1>
+        <center> 
+            <div class="headline"><h1>Tätigkeiten</h1></div>
 
             <h3> <a href="Maler.php">Maler </a> </h3>
             <a href="Maler.php"> <img src="../pictures/Maler.jpg" width="40%"> </a>

@@ -42,47 +42,28 @@
 			//{
 		?>
 
-          <center>
         <form action="" method="post">
-        <h1><u>Maler</u></h1>
-        <font size="5">
-		
+		<div class="headline"><h1><u>Maler</u></h1></div>
+		<div class="form">
+			<center>	
 			<p>
 				Anrede <select name="Anrede" size="1" value="<?php echo $_POST['Anrede'] ?>">
 				<option>Herr</option>
 				<option>Frau</option>
 				</select>
-				Vorname <input type="text" name="vorname" placeholder="Max" value="<?php echo $_POST['vorname'] ?>"/>
-				Nachname <input type="text" name="nachname" placeholder="Mustermann" value="<?php echo $_POST['nachname'] ?>"/>
-			</p>
-			<p>
-				Geburtstag <br/><input type="date" name="Geburtstag" required value="<?php echo $_POST['Geburtstag'] ?>"/>
-			</p>
-			<table width="100%">
-			<tr>
-				<td><center><font size="5">Strasse</font></center></td>
-				<td><center><font size="5">Hausnummer</font></center></td>
-				<td><center><font size="5">Stadt</font></center></td>
-				<td><center><font size="5">Postleitzahl</font></center></td> 
-			</tr>
-			<tr>
-				<td><center><input type="text" name="strasse" placeholder="Musterstrasse" value="<?php echo $_POST['strasse'] ?>"/></center></td>
-				<td><center><input type="number" name="hausnummer" placeholder="3" value="<?php echo $_POST['hausnummer'] ?>"/></center></td>
-				<td><center><input type="text" name="stadt" placeholder="Hilden" value="<?php echo $_POST['stadt'] ?>"/></center></td>
-				<td><center><input type="number" name="postleitzahl" placeholder="40721" value="<?php echo $_POST['postleitzahl'] ?>"/></center></td>
-			</tr>
-			
-			</table>
-            <p> 
-				Telefon <input type="number" name="telefon" value="<?php echo $_POST['telefon'] ?>"/>
-				E-Mail <input type="text" name="e-mail" value="<?php echo $_POST['e-mail'] ?>"/>
-			</p>
-            <p>
+				<br /><br />
+				Vorname:<input type="text" name="vorname" placeholder="Max" value="<?php echo $_POST['vorname'] ?>"/><br /><br />
+				Nachname:<input type="text" name="nachname" placeholder="Mustermann" value="<?php echo $_POST['nachname'] ?>"/><br /><br />      
+				Geburtstag:<input type="date" name="Geburtstag" required value="<?php echo $_POST['Geburtstag'] ?>"/><br /><br />
+				Strasse:<input type="text" name="strasse" placeholder="Musterstrasse" value="<?php echo $_POST['strasse'] ?>"/><br /><br />
+				Hausnummer:<input type="number" name="hausnummer" placeholder="3" value="<?php echo $_POST['hausnummer'] ?>"/><br /><br />
+				Stadt:<input type="text" name="stadt" placeholder="Hilden" value="<?php echo $_POST['stadt'] ?>"/><br /><br />
+				Postleitzahl:<input type="number" name="postleitzahl" placeholder="40721" value="<?php echo $_POST['postleitzahl'] ?>"/><br /><br />
+				Telefon:<input type="number" name="telefon" value="<?php echo $_POST['telefon'] ?>"/><br /><br />
+				E-Mail:<input type="text" name="e-mail" value="<?php echo $_POST['e-mail'] ?>"/><br /><br />
 				<h3>Terminzeitraum</h3>
 				von <input type="date" name="Termin Anfang" value="<?php echo $_POST['Termin Anfang'] ?>" required/>
 				bis <input type="date" name="Termin Ende" value="<?php echo $_POST['Termin Ende'] ?>" required/>
-			</p>
-            <p>
 				<h3>Tätigkeit</h3>
 				<textarea name="Tätigkeit" cols="50" rows="10"> 
 				</textarea>
@@ -92,10 +73,9 @@
 			<input type="submit" name="Senden" value="Anfrage abschicken!">
 			<input type="reset">
 			</p>
-
+			</center>
+		</div>
         </form>
-        </font>
-        </center>      
 		
 		<?php
 			
