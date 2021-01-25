@@ -37,7 +37,9 @@
         </div>
         <div id="article">
                
-               
+               <div class="headline"><h1>Über uns</h1></div>
+               <br />
+               <h4>Unser Unternehemen gibt es seit dem 2020 und wurde von Christoph Riedel und Jan Werth gegründet. Diese Firma wurde im Unterricht gegründet.</h4>
                
 
 

@@ -61,9 +61,8 @@
 				Postleitzahl:<input type="number" name="postleitzahl" placeholder="40721" value="<?php echo $_POST['postleitzahl'] ?>"/><br /><br />
 				Telefon:<input type="number" name="telefon" value="<?php echo $_POST['telefon'] ?>"/><br /><br />
 				E-Mail:<input type="text" name="e-mail" value="<?php echo $_POST['e-mail'] ?>"/><br /><br />
-				<h3>Terminzeitraum</h3>
-				von <input type="date" name="Termin Anfang" value="<?php echo $_POST['Termin Anfang'] ?>" required/>
-				bis <input type="date" name="Termin Ende" value="<?php echo $_POST['Termin Ende'] ?>" required/>
+				<h3>Wunsch Termin</h3>
+				Wunschtermin:<input type="date" name="TerminW" value="<?php echo $_POST['TerminW'] ?>" required/>
 				<h3>Tätigkeit</h3>
 				<textarea name="Tätigkeit" cols="50" rows="10"> 
 				</textarea>
@@ -80,108 +79,131 @@
 		<?php
 			
 			if(isset($_POST['Senden'])==true)
-			{	
-				$anrede = $_POST['Anrede'];
-				$vorname = trim($_POST['vorname']);
-				$nachname = trim($_POST['nachname']);
-				$email = trim($_POST['e-mail']);
-				$telefon = trim($_POST['telefon']);
-				$strasse = $_POST['strasse'];
-				$hausnummer = $_POST['hausnummer'];
-				$stadt = trim($_POST['stadt']);
-				$postleitzahl = trim($_POST['postleitzahl']);
+			{			
+				
+				//error message 
 				$error = false;
 				$fehler_nachricht=array();
-				$umlaute = array('ä','Ä','ü','Ü','ö','Ö');
-
-				
-				
+			
+				//vorname
+				$vorname = trim($_POST['vorname']);
 				if($vorname=="")
 				{
 				$error = true;
 				$fehler_nachricht[]="Geben sie bitte ihren Vornamen ein";
 				}
+
+				//nachname
+				$nachname = trim($_POST['nachname']);
 				if($nachname=="")
 				{
 				$error = true;
 				$fehler_nachricht[]="Geben sie bitte ihren Nachnamen ein";
 				}
-				if($email=="")
-				{
-				$error = true;
-				$fehler_nachricht[]="Geben sie bitte ihren E-Mail ein";
-				}
+
+				//telefon
+				$telefon = trim($_POST['telefon']);
 				if($telefon=="")
 				{
 				$error = true;
 				$fehler_nachricht[]="Geben sie bitte ihren Telefonnummer an";
 				}
+
+				//strasse
+				$strasse = $_POST['strasse'];
 				if($strasse=="")
 				{
 				$error = true;
 				$fehler_nachricht[]="Geben sie bitte ihren Strassennamen an";
 				}
+
+				//hausnummer
+				$hausnummer = $_POST['hausnummer'];
 				if($hausnummer=="")
 				{
 				$error = true;
 				$fehler_nachricht[]="Geben sie bitte ihren Hausnummer an";
 				}
+
+				//stadt
+				$stadt = trim($_POST['stadt']);
 				if($stadt=="")
 				{
 				$error = true;
 				$fehler_nachricht[]="Geben sie bitte ihren Stadtnamen an";
 				}
+				
+				//postleitzahl
+				$postleitzahl = trim($_POST['postleitzahl']);
 				if($postleitzahl=="")
 				{
 				$error = true;
 				$fehler_nachricht[]="Geben sie bitte ihren Postleitzahl an";
 				}
+
+				//email
+				$email = trim($_POST['e-mail']);
+				if($email=="")
+				{
+				$error = true;
+				$fehler_nachricht[]="Geben sie bitte ihren E-Mail ein";
+				}
+
 				if(strpos($email, "@")== false)
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse enthält kein @ Zeichen oder es steht am Anfang. ";
 				}
+
 				if((strpos($email, "@")) != (strrpos($email, "@")))
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse enthält zu viele @ Zeichen. ";
 				}
+
 				if((strpos($email, "."))== false)
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse enthält kein Punkt oder er steht am Anfang. ";
 				}
+
 				if((strpos($email, " "))== true)
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse enthält ein Leerzeichen. ";
 				}
+
 				if(substr($email, -1,1)==".")
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse enthält einen Punkt am Ende. ";
 				}
+
 				if(substr($email, -1,1)=="@")
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse enthält einen @ am Ende. ";
 				}
+
 				if(strlen($email) < "6") 
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse ist zu kurz. ";
 				}
+
 				if(strlen($email) > "320") 
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre E-Mail Adresse ist zu lang. ";
 				}
+
 				if((strrpos($email, "."))<(strrpos($email, "@")))
 				{
 					$error = true;
 					$fehler_nachricht[]="Ihre letzter Punkt ist nicht an der Richtigen stelle.";
 				}
 				
+				$umlaute = array('ä','Ä','ü','Ü','ö','Ö');
 				for($i = 0; $i >= 5;$i++)
 				{
 					if(strpos($email,$umlaute[$i]))
@@ -192,6 +214,35 @@
 					}
 					
 				}
+
+				//Wunschtermin
+				$TerminW = strtotime($_POST['TerminW']);
+				$Date = date("d.m.Y",$TerminW);
+				$today = time();
+				$todaydate = strtotime($today);
+				
+				//Zeit bis zum Wunschtermin
+				$daysleft = (strtotime($Date)-$today)/60/60/24;
+	
+				//Tag des Termins 
+				$dayk = array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+				$Termintag = date("d", strtotime(daysleft));
+				$day = $dayk [date("w", $TerminW)];
+
+				//Wuschtermin check 
+				if($today > strtotime($Date))
+				{
+					$error = true;
+					$fehler_nachricht[]="Ihr Wunschtermin ist in der Vergangenheit.";
+				}
+
+				if($day == "Sonntag")
+				{
+					$error = true;
+					$fehler_nachricht[]="Ein Sonntag als Wunschtermin ist leider nicht möglich.";
+				}
+				
+				//error message
 				if($error == true)
 				{
 					echo"<center><h1>Fehlermeldung</h1></center><br/>";
@@ -200,16 +251,25 @@
 				{		
 					echo "<center><h2>".$fehler."</h2></center>";
 				}
-			
+				
+				//success message
+				$anrede = $_POST['Anrede'];
 				if($error == false)
 				{
-				echo"<br /><br /><center><h2> Vielen Dank, ". $_POST['Anrede'] . " " . $_POST['nachname'] . ". Wir melden uns bald bei Ihnen!</h2></center>" ;
+				echo"<br /><br /><center><h2> Vielen Dank, ". $_POST['Anrede'] . " " . $_POST['nachname'] . ". Wir melden uns bald bei Ihnen!</h4>";
+				echo"<h2>Ihre Wunsch Termin ist ". $Date ."</h2></center>";
+				echo"<center><h2> Zeit bis zum Termin ist: ". ceil($daysleft) ."</h2> </center>";
+				echo"<center><h2> Tag des Termins: ". $day ."</h2> </center>";
+				if($day == "Samstag")
+				{
+					echo"<center><h2>Bitte beachten Sie, dass Samstage extra kosten beinhalten.</h2></center>";
 				}
+				}				
+
 			}
-			
-		?>
-               
-               
+		
+		
+		?>      
 
 
         </div>
