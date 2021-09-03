@@ -39,7 +39,7 @@
                
                <div class="headline"><h1>Über uns</h1></div>
                <br />
-               <h4>Unser Unternehemen gibt es seit dem 2020 und wurde von Christoph Riedel und Jan Werth gegründet. Diese Firma wurde im Unterricht gegründet.</h4>
+               <h4>Unser Unternehemen gibt es seit dem 2020 und wurde von XXXX und XXXX gegründet. Diese Firma wurde im Unterricht gegründet.</h4>
                
 
 
