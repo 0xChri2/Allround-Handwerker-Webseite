@@ -1,4 +1,4 @@
-<!-- Jan Werth, Christoph Riedel-->
+<!-- Bertyyy, ImChri2-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
@@ -41,9 +41,9 @@
                <br />
                <h3>Bei Fragen oder Anmerkungen an den Betrieb oder die Webseite. Schreiben sie und gerne eine E-Mail oder rufen uns an.</h3>
                <br />
-               <h4>Geschäftsführer: Christoph Riedel und Jan Werth</h4>
-               <h4>Standort: Am Holterhöfchen 34 im Raum N355W31 und W32</h4>
-               <h4>40721 Hilden</h4>
+               <h4>Geschäftsführer: ImChri2 und Bertyyy</h4>
+               <h4>Standort: XXXXX</h4>
+               <h4>40210 Düsseldorf</h4>
                <h4>Telefon: 1234567890</h4>
                <h4>E-Mail: AllroundHandwerker@Handwerk.de</h4>
         </center>
